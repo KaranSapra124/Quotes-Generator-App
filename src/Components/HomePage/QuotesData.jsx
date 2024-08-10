@@ -17,10 +17,10 @@ const QuotesData = () => {
 
   return (
     <>
-      <div>
+      <div className="flex flex-wrap">
         {quotesData?.map((elem) => {
           return (
-            <div>
+            <div className="border w-fit m-5 p-10 rounded bg-black text-gray-200 hover:bg-gray-400 hover:text-black duration-500">
               <h1>{elem.quote}</h1>
               <p>-{elem.author}</p>
             </div>
